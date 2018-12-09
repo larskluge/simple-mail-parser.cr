@@ -20,7 +20,7 @@ dependencies:
 require "simple-mail-parser"
 
 eml = "To: foo@bar.com\r\nContent-Type: text/plain\r\n\r\nHello"
-message = Parser.parse(eml)
+message = SimpleMailParser.parse(eml)
 message.to.should eq "foo@bar.com"
 message.body.should eq "Hello"
 ```
