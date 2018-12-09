@@ -1,6 +1,8 @@
 # simple-mail-parser
 
-TODO: Write a description here
+A quick and dirty Crystal email parser.
+
+Port of <https://github.com/jaronson/simple_mail_parser>.
 
 ## Installation
 
@@ -8,7 +10,7 @@ TODO: Write a description here
 ```yaml
 dependencies:
   simple-mail-parser:
-    github: aekym/simple-mail-parser
+    github: larskluge/simple-mail-parser.cr
 ```
 2. Run `shards install`
 
@@ -16,9 +18,12 @@ dependencies:
 
 ```crystal
 require "simple-mail-parser"
-```
 
-TODO: Write usage instructions here
+eml = "To: foo@bar.com\r\nContent-Type: text/plain\r\n\r\nHello"
+message = Parser.parse(eml)
+message.to.should eq "foo@bar.com"
+message.body.should eq "Hello"
+```
 
 ## Development
 
@@ -26,7 +31,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/aekym/simple-mail-parser/fork>)
+1. Fork it (<https://github.com/larskluge/simple-mail-parser.cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -34,4 +39,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Lars Kluge](https://github.com/aekym) - creator and maintainer
+- [Lars Kluge](https://github.com/larskluge) - creator and maintainer
