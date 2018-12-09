@@ -1,6 +1,9 @@
-# TODO: Write documentation for `Simple::Mail::Parser`
-module Simple::Mail::Parser
+require "./simple-mail-parser/**"
+
+module SimpleMailParser
   VERSION = "0.1.0"
 
-  # TODO: Put your code here
+  def parse(content : String)
+    Parser.new
+  end
 end

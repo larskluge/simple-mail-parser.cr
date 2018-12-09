@@ -6,4 +6,8 @@ authors:
 
 crystal: 0.27.0
 
+dependencies:
+  quoted_printable:
+    github: arcage/crystal-quotedprintable
+
 license: MIT
