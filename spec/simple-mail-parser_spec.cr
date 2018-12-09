@@ -2,6 +2,13 @@ require "./spec_helper"
 
 module SimpleMailParser
   describe SimpleMailParser do
+    it "parses a minimal email" do
+      eml = "To: foo@bar.com\r\nContent-Type: text/plain\r\n\r\nHello"
+      message = SimpleMailParser.parse(eml)
+      message.to.should eq "foo@bar.com"
+      message.body.should eq "Hello"
+    end
+
     it "parses a multipart email" do
       message = Parser.parse(email_fixture("josh"))
 
