@@ -21,7 +21,7 @@ module SimpleMailParser
             if current_key && line =~ /^\s+/
               blocks[current_key] += " " + line.strip
             else
-              puts "Invalid header #{line}"
+              raise "Invalid header #{line}"
             end
             next
           end
@@ -78,7 +78,7 @@ module SimpleMailParser
     protected def self.parse_body_block(content, headers)
       type = headers["content-type"]?.try &.value || "text/plain"
       case type
-      when "text/plain", "text/html"
+      when /text\//, /application\//
         if headers["content-transfer-encoding"]?.try &.value == "quoted-printable"
           encoding = headers["content-type"].opts["charset"]? || "utf-8"
           QuotedPrintable.decode_string(content, line_break: "\r\n", encoding: encoding)
@@ -95,17 +95,15 @@ module SimpleMailParser
     end
 
     protected def self.parse_multitype(content, boundary)
-      unless content && boundary
-        return false
-      end
-
-      if content[0, boundary.size + 2] != "--#{boundary}"
-        puts "Invalid multipart"
-        return false
-      end
-
-      content.split("--#{boundary}\r\n").map{|c| c unless c.nil? || c.empty? }.compact.map do |part|
-        parse_part(part, boundary: boundary)
+      if boundary
+        split_by = "--#{boundary}\r\n"
+        start = content.index(split_by) || 0
+        content = content[start..-1]
+        content.split(split_by).map(&.strip).map{|c| c unless c.nil? || c.empty? }.compact.map do |part|
+          parse_part(part, boundary: boundary)
+        end
+      else
+        content
       end
     end
   end

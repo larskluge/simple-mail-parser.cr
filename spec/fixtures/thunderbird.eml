@@ -1,0 +1,59 @@
+To: foo@bar.com
+From: Lars <l@larskluge.com>
+Subject: Hello Subject
+Message-ID: <5f76479b-4e3c-82a5-c9bb-b7e93e9081a2@l7e.eu>
+Date: Sat, 8 Dec 2018 22:38:27 +0100
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:60.0)
+ Gecko/20100101 Thunderbird/60.3.3
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="------------1071086FE181B530DCF3622B"
+Content-Language: en-US
+
+This is a multi-part message in MIME format.
+--------------1071086FE181B530DCF3622B
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Body
+
+
+--------------1071086FE181B530DCF3622B
+Content-Type: application/pgp-keys;
+ name="pEpkey.asc"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment;
+ filename="pEpkey.asc"
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQENBFv5UWkBCADDV+OXnpHIBz7WCm8eHm3aQmHUm0qoTdgj2i1v9Np00OX19N59
+BXH5H+TIiFq0gFLLOwkoqpsndYSnFFUauUFcGvXjEvCyRAxLj1KUOxPQVQsZ6Vt9
+Z9i2Ie6yoEq3KuoyByjCdz1Y3Oj5aq9xK3CYecXRYEIjfBQ02pRpvH7mo5k+YAzz
+0asK6fkGoOLK1nqq4HBK1G4XPvCfsuue9am6k9qp2iRjbgB2XDUVTO9pKVT6kFhb
+vGcWux5Bm7pbJAQ4cGxYVanjTEcfKOZG+66lO0uq0zyr402P7Gt3mUdSrcyMa3JW
+ziz/HwBEDiJsRq5eAdU81/koay8w4cMV4cFdABEBAAG0D0xhcnMgPGxAbDdlLmV1
+PokBVAQTAQgAPhYhBHd/L1IcsFChHbcOdkiDq3SOPOC8BQJb+VFqAhsDBQkB4TOA
+BQsJCAcCBhUKCQgLAgQWAgMBAh4BAheAAAoJEEiDq3SOPOC8a8AH/0BoNJouofAv
+yGlzji2+yGzdtlJloPKyjK52dHHmPLnbUPYPE/zDDWqsqVoZlH/WwNF03mZAm5td
+eGVBu6pf6aSRvTsCiF911R5n5eMk7G5Dqk1BAw1h0xj6Ly8y1vmsq+BRbYobBtui
+jRi4/mL3TTGM8/+0xL5To24lXX+qutkoeY1jkkhW/8xkN2N8Rl3fMuNWTnXLCu2p
+177HIUPNSH4W4EdS4il+5OpFtGDezlQHrPxH2fL72Ey0haRvLAfln9NP+cBPPXGc
+X7GA/TyatZr6zMcoXKH/xUyxAbBapHI6Fc7NCHVb/cAGMflPCnIGp/GRAPi9f4Uz
+jQ0yD4Dhd6a5AQ0EW/lRagEIALBv7elfmsPV/0pAmPeGk2rqhcLmT+mI6P3ixQv2
+kxrJ9QUgfTjGTo0Usc4zz4zwl5U3rmJQsdVoUUS3tAU5R9MyhtPFbXQeaS9cC1KI
+TJHacCwmCTyoZnGW3Zvm42ocNcngPJdjuSnBfcEwgPusjbULyVJsDBWfBMwXqPOX
+CJ39K2+x+2EUiG62yEuXDL6LwGy9vmN7VKvTlI9KSEm6J42x1LM0z/Cm1fIIK111
+cA992C2IwI+JdLBQPzOvNZtwGBnKhFylCTF6rWs3fN1aNv3RVxNQIZ/xKF7wmOWz
+QCbFFqeMtDfIz13LdWGNiIZG3rJnUicdvDHkJV61UQgGR+kAEQEAAYkBPAQYAQgA
+JhYhBHd/L1IcsFChHbcOdkiDq3SOPOC8BQJb+VFqAhsMBQkB4TOAAAoJEEiDq3SO
+POC8lIUIAI0+8pcu5EXc4bXMdetypMWoqeTtRssPRiC9yWGOfgjpDmwjuq1uUf7p
+iea/9+dg3SMNQX/CaC5fDqyD4wJ4gAmKNJQU1lZHLZcbjsPrro/z8fCe7ZaM9hyx
+u+ddXg3mfGUMi7k/P5n5wLljRfvz4p/6MAzf7Rhlls97flftJGbVJbYhtMnXtaq2
+GiF9bUE+q/SxkeI+KajE/z2ecYY1vY9LRfPBG9Y+F/4vhpUF8DUmBIcdftzrXqNB
+SepTOvHDSndn2naxcr6k2EyZLXZhvFWHv7unxr+cFqdnxabup8abIKUk/zefiKpF
+8fTUPzF5fX1wtlmCEDM6EaweqTsAOPc=3D
+=3D8mrO
+-----END PGP PUBLIC KEY BLOCK-----
+
+--------------1071086FE181B530DCF3622B--
